@@ -1,5 +1,292 @@
-body {
-    text-align: center;
+.effect {
+    display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     color: brown;
+    margin-bottom: 1200px;
+}
+
+.effect:hover {
+    background-color: cyan;
+}
+
+@media only screen and (min-width: 724px) {
+
+@keyframes opacity1 {
+    from {top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 0; height: 0; opacity: 0; }
+    to {opacity: 1;}
+  }
+
+@keyframes img-anime {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.square {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin: auto;
+}
+.big-img {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url('../img/verre-boule.jpg');
+}
+.animebig {
+    animation: opacity1 1s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.img-1 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    left: 160px;
+    top: -20%;
+    border: 10px solid white;
+    background-image: url('../img/bureau.jpg');
+}
+.anime-img1 {
+    animation: img-anime 0.2s ease 1s;
+    animation-fill-mode: backwards;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: turquoise;
+}
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.overlay a:hover {
+    color: white;
+}
+
+.img-1:hover .overlay {
+    opacity: 1;
+}
+.img-2:hover .overlay {
+    opacity: 1;
+}
+.img-3:hover .overlay {
+    opacity: 1;
+}
+.img-4:hover .overlay {
+    opacity: 1;
+}
+.img-5:hover .overlay {
+    opacity: 1;
+}
+.img-6:hover .overlay {
+    opacity: 1;
+}
+
+.img-2 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    left: 160px;
+    bottom: -20%;
+    border: 10px solid white;
+    background-image: url('../img/batiment180.jpg');
+
+}
+
+.anime-img2 {
+    animation: img-anime 0.2s ease 1.6s;
+    animation-fill-mode: backwards;
+}
+
+.img-3 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    left: -15%;
+    top: 5%;
+    border: 10px solid white;
+    background-image: url('../img/vitrerie180.jpg');
+}
+
+.anime-img3 {
+    animation: img-anime 0.2s ease 2s;
+    animation-fill-mode: backwards;
+}
+
+.img-4 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    left: -15%;
+    bottom: 5%;
+    border: 10px solid white;
+    background-image: url('../img/pressure.jpg');
+}
+
+.anime-img4 {
+    animation: img-anime 0.2s ease 1.8s;
+    animation-fill-mode: backwards;
+}
+
+.img-5 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    right: -15%;
+    top: 5%;
+    border: 10px solid white;
+    background-image: url('../img/escaliers.jpg');
+}
+
+.anime-img5 {
+    animation: img-anime 0.2s ease 1.2s;
+    animation-fill-mode: backwards;
+}
+
+.img-6 {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    right: -15%;
+    bottom: 5%;
+    border: 10px solid white;
+    background-image: url('../img/demenagement.jpg');
+
+}
+
+.anime-img6 {
+    animation: img-anime 0.2s ease 1.4s;
+    animation-fill-mode: backwards;
+}
+.hidden {
+    opacity: 0;
+}
+.hidden-text {
+    opacity: 0;
+}
+
+}
+
+@media only screen and (max-width: 724px) {
+
+    .img-1 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        border: 10px solid white;
+        background-image: url('../img/bureau.jpg');
+    }
+
+    .img-2 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        border: 10px solid white;
+        background-image: url('../img/batiment180.jpg');
+    
+    }
+    
+    .img-3 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        border: 10px solid white;
+        background-image: url('../img/vitrerie180.jpg');
+    }
+    
+    .img-4 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        border: 10px solid white;
+        background-image: url('../img/pressure.jpg');
+    }
+    
+    .img-5 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        border: 10px solid white;
+        background-image: url('../img/escaliers.jpg');
+    }
+    
+    .img-6 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        border: 10px solid white;
+        background-image: url('../img/demenagement.jpg');
+    
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .text {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .square {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .hidden-text {
+        color: white;
+        align-items: center;
+    }
+
 }
