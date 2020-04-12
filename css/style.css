@@ -1,7 +1,11 @@
 body{
     color: #333;
     text-align: center;
+<<<<<<< HEAD
     font-family: 'Courier New', Courier, monospace;
+=======
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> cabecera
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -17,3 +21,25 @@ body{
 .container h1 {
     font-size: 20px;
 }
+<<<<<<< HEAD
+=======
+
+.cabecera {
+    background: #3333ff;
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+    text-align: left;
+    font-weight: bold;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.5);
+}
+
+.cabecera span {
+    font-weight: normal;
+    font-size: 0.8em;
+    padding: 0 0 0 1em;
+}
+.post {
+
+}
+>>>>>>> cabecera
